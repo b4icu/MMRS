@@ -1,0 +1,9 @@
+[
+    {
+        "email":"lang_m@012.net.il",
+        "password": "langm",
+        "firstName":"Michael",
+        "lastName": "Lang",
+        "data":"app/data/nir-recipes.json"
+    }
+]

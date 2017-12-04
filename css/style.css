@@ -1,0 +1,37 @@
+.navbar {
+    margin-bottom: 0;
+}
+
+.navbar-brand {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif,;
+}
+
+.jumbotron .container h1 {
+    font-family: "Engravers";
+    font-size: 4em;
+}
+
+.recipe-item {
+    cursor: pointer;
+}
+
+.ex1 {position: absolute;    
+    
+        top: 180px;
+        left: 40px;
+        text-decoration: none;
+        font-family: arial;
+        font-size: 20px;
+        color: #35FDF3;
+        font-weight: bold;
+        padding-right: 10px;
+       }
+
+.row {
+    padding: none;
+    margin: none;
+    font-style: color= white;
+}
+
+  
+  

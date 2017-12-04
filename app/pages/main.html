@@ -1,0 +1,49 @@
+<div class="container">
+
+  <h3>{{currentDateTime}}</h3>
+</div>
+
+<div id="clockbox"></div>
+<br>
+
+
+
+
+<form>
+  <div class="container">
+
+    <fieldset>
+      <legend>Enter Day, Enter Time, Click a table for Reservation and then click ENTER:</legend>
+      <br>
+      <h4>Day:</h4>
+      <input type="radio" name="question" id=”td” value="" checked>
+      <label for="yes">Today
+                    <input type="radio" name="question" id=”to” value="">
+                    <label for="no">Tomorrow  
+                            <input type="radio" name="question" id=”at” value="">
+                            <label for="no">After Tomorrow       
+        </fieldset>
+   
+        Time:<input type="time" ng-model="resTime" min=12:00 max=23:00 />
+        <button type="button" class="btn btn-default" onclick="printMostKmPerYear()">Enter</button>
+        
+</form>
+
+
+<body>
+        <div class="container">
+          <div class="row" ng-controller="TableCtrl">
+              <br><br>
+              <legend>Restaurant Tables Status (Click for Reservation):</legend>
+ 
+            <div class="column col-xs-12 col-sm-6 col-md-3" ng-repeat="currenttable in tables">
+       
+              <img ng-src={{currenttable.currentImage}} style: width=80% hight=90% ng-click="changePicture(currenttable)">
+      
+              <br> {{"Table No. " + currenttable.num + " with " + currenttable.status + " " + current.Res}} 
+      
+            </div>
+          </div>
+        </div>
+     
+      </body>

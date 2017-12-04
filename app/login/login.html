@@ -1,0 +1,35 @@
+<div class="modal-header">
+    <button type="button" class="close" aria-label="Close" ng-click="dismiss()">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <h4 class="modal-title">Have a nice shift</h4>
+</div>
+<div class="modal-body">
+    <div class="alert alert-danger" ng-show="failedAttempt">
+        Sorry, try again!
+    </div>
+    
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="firstName">Enter:</label>
+            <div class="col-sm-10">
+                <input type="firstName" class="form-control" id="firstName" placeholder="First name" ng-model="firstName">
+            </div>
+            <label class="control-label col-sm-2" for="i\lastName">Enter:</label>
+            <div class="col-sm-10">
+                 <input type="lastName" class="form-control" id="lastName" placeholder="Last name" ng-model="lastName">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">Password:</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" ng-model="password">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="summit" class="btn btn-default pull-right" ng-click="login()">Login</button>
+            </div>
+        </div>
+    </form>
+</div>
