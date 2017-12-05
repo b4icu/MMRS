@@ -39,11 +39,13 @@ tableApp.controller("TableCtrl", function ($scope, $http, Table) {
   });
 
 
-  $scope.changePicture = function(currentTable, currentRes) {
-    if (currentTable.currentImage === currentTable.img1) { 
-    currentTable.currentImage = currentTable.img0 && currentTable.res === "reserved";
+  $scope.changePicture = function (currentTable) {
+    if (currentTable.currentImage === currentTable.img1) {
+      currentTable.currentImage = currentTable.img0;
+      currentTable.res = "free";
     } else {
-      currentTable.currentImage = currentTable.img1 && currentTable.res === "free";
+      currentTable.currentImage = currentTable.img1;
+      currentTable.res = "reserved";
     }
   }
 });

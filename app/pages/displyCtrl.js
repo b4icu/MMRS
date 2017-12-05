@@ -25,3 +25,15 @@ tableApp.controller("DisplayCtrl", function($scope, $interval) {
     
     
     })
+
+    $scope.reservations = [];
+    
+      $http.get("app/data/reservations.json").then(function (response) {
+        for (var i = 0; i < response.data.length; i++) {
+          $scope.reservations.push(new Reservation(response.data[i]))
+        }
+      });
+    
+    
+     
+  

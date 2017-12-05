@@ -33,5 +33,14 @@
     font-style: color= white;
 }
 
-  
-  
+.table {
+    text-align: left;
+    font-size: 20px;
+    color: #143EF7;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.clock {
+    color: red;
+}

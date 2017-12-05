@@ -16,11 +16,11 @@
       <legend>Enter Day, Enter Time, Click a table for Reservation and then click ENTER:</legend>
       <br>
       <h4>Day:</h4>
-      <input type="radio" name="question" id=”td” value="" checked>
+      <input type="radio" name="question" id="td" value="" checked>
       <label for="yes">Today
-                    <input type="radio" name="question" id=”to” value="">
+                    <input type="radio" name="question" id="to" value="">
                     <label for="no">Tomorrow  
-                            <input type="radio" name="question" id=”at” value="">
+                            <input type="radio" name="question" id="at" value="">
                             <label for="no">After Tomorrow       
         </fieldset>
    
@@ -40,7 +40,7 @@
        
               <img ng-src={{currenttable.currentImage}} style: width=80% hight=90% ng-click="changePicture(currenttable)">
       
-              <br> {{"Table No. " + currenttable.num + " with " + currenttable.status + " " + current.Res}} 
+              <br> {{"Table No. " + currenttable.num + " with " + currenttable.status + " " + currenttable.res}} 
       
             </div>
           </div>

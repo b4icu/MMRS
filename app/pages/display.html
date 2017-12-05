@@ -1,7 +1,37 @@
+
+
 <div class="container">
     <h1>Display Page </h1>
-
-    <h2>{{currentDateTime}} </h2>
+    <div class="clock">
+    <h2>{{currentDateTime}}</h2>
 </div>
+</div>
+<br>
 
 <div id="clockbox"></div>
+
+<div class="container">
+    <div class="table">
+
+
+        <table style="width:100%">
+            <tr>
+                <th>Day</th>
+                <th>Hour</th>
+                <th>Table</th>
+                <th>Diners</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Phone</th>
+            </tr>
+    </div>
+</div>
+<div class="container">
+        <div class="row" ng-controller="TableCtrl">
+          
+          <div class="reservations col-xs-8 col-sm-4" ng-repeat="currentReservations in Reservations>
+    
+            <br> {{currentReservations.day + " " + currentReservations.hour + " " + currentReservations.table + " " + currentReservations.diners + " " + currentReservations.fname + " " + currentReservations.lname + " " + currentReservations.phone}}
+          </div>
+        </div>
+      </div>
