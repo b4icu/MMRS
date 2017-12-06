@@ -17,7 +17,7 @@ tableApp.controller("MainCtrl", function ($scope, $interval) {
     if (nmin <= 9) nmin = "0" + nmin;
     if (nsec <= 9) nsec = "0" + nsec;
 
-    $scope.currentDateTime = "" + tday[nday] + ", " + tmonth[nmonth] + " " + ndate + ", " + nyear + "    " + nhour + ":" + nmin
+    $scope.currentDateTime = "" + tday[nday] + ", " + tmonth[nmonth] + " " + ndate + ", " + nyear + "    " + nhour + ":" + nmin + ":" + nsec + " " + ap;
   }
 
   $interval(GetClock, 1000);
@@ -26,9 +26,6 @@ tableApp.controller("MainCtrl", function ($scope, $interval) {
 })
 
 tableApp.controller("TableCtrl", function ($scope, $http, Table) {
-
-
-
 
   $scope.tables = [];
 

@@ -14,11 +14,11 @@ tableApp.config(function ($routeProvider) {
         })
         .when("/reservation", {
             templateUrl: "app/pages/reservation.html",
-            //controller: "reservCtrl"
+            //controller: "ReservCtrl"
         })
         .when("/cancelation", {
             templateUrl: "app/pages/cancelation.html",
-            //controller: "cancelCtrl"
+            //controller: "CancelCtrl"
 
         }).when("/display", {
             templateUrl: "app/pages/display.html",
